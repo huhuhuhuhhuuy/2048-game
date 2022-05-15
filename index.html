@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    <script type="text/javascript" src="core.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="h1">
+            <h1>2048</h1>
+            <div class="h11">
+                <p>本次积分</p>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="h12">
+                <p>历史最佳</p>
+                <h2>0</h2>
+            </div>
+            <div class="begin" onclick="game.start()">Start</div>
+            <div class="reset" onclick="game.start()">Reset</div>
+        </div>
+        <div class="rule">
+            Join the numbers and get to the 2048 tile!
+        </div>
+        <div class="game">
+            <div class="box1" id="c00"></div>
+            <div class="box1" id="c01"></div>
+            <div class="box1" id="c02"></div>
+            <div class="box1" id="c03"></div>
+            <div class="box1" id="c10"></div>
+            <div class="box1" id="c11"></div>
+            <div class="box1" id="c12"></div>
+            <div class="box1" id="c13"></div>
+            <div class="box1" id="c20"></div>
+            <div class="box1" id="c21"></div>
+            <div class="box1" id="c22"></div>
+            <div class="box1" id="c23"></div>
+            <div class="box1" id="c30"></div>
+            <div class="box1" id="c31"></div>
+            <div class="box1" id="c32"></div>
+            <div class="box1" id="c33"></div>
+
+        
+            <div class=" box2" id="g00"></div>
+            <div class=" box2" id="g01"></div>
+            <div class=" box2" id="g02"></div>
+            <div class=" box2" id="g03"></div>
+            <div class=" box2" id="g10"></div>
+            <div class=" box2" id="g11"></div>
+            <div class=" box2" id="g12"></div>
+            <div class=" box2" id="g13"></div>
+            <div class=" box2" id="g20"></div>
+            <div class=" box2" id="g21"></div>
+            <div class=" box2" id="g22"></div>
+            <div class=" box2" id="g23"></div>
+            <div class=" box2" id="g30"></div>
+            <div class=" box2" id="g31"></div>
+            <div class=" box2" id="g32"></div>
+            <div class=" box2" id="g33"></div>
+
+        </div>
+        
+        
+    </div>
+    <!-- 游戏结束时的遮盖层 -->
+    <div id="over">
+        <div>
+            <!-- 半透明背景 -->
+        </div>
+        <p>
+            <!-- 居中小窗口 -->
+            GAME OVER !<br>
+            SCORE:<span id="finalScore"></span><br>
+            <a  class="button" onclick="game.start()">Try again!</a>
+        </p>
+    </div>
+</body>
+</html>
